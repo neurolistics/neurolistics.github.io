@@ -1,35 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neurolistics - Coming Soon</title>
-    <style>
-        body {
-            background-color: #0e0e2c;
-            color: white;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-        }
-        p {
-            font-size: 1.2em;
-            color: #cccccc;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neurolistics LLC</title>
+
+  <!-- Open Graph for Meta -->
+  <meta property="og:title" content="Neurolistics LLC" />
+  <meta property="og:description" content="Official website for Neurolistics LLC." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://neurolistics.com/" />
+
+  <style>
+    :root { --bg:#0d1021; --card:#141738; --txt:#e8e9ff; --muted:#aeb3d9; --accent:#8aa0ff; }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; min-height:100dvh; display:grid; place-items:center;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background:radial-gradient(1200px 800px at 50% -10%, #1a1f49 0%, var(--bg) 55%);
+      color:var(--txt);
+    }
+    .card {
+      width:min(760px, 92vw);
+      background:linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.08);
+      border-radius:16px; padding:28px 28px 22px;
+      box-shadow:0 10px 30px rgba(0,0,0,.35);
+      backdrop-filter: blur(6px);
+    }
+    h1 { margin:0 0 6px; font-size:clamp(26px, 4vw, 34px); letter-spacing:.3px; }
+    .tag { display:inline-block; margin:.2rem 0 1rem; padding:.25rem .55rem; border:1px solid rgba(255,255,255,.15); border-radius:8px; color:var(--muted); font-size:.86rem; }
+    .grid { display:grid; gap:10px; margin-top:10px; }
+    .row { display:flex; gap:10px; flex-wrap:wrap; }
+    .label { width:140px; color:var(--muted); }
+    a { color:var(--accent); text-decoration:none; }
+    a:hover { text-decoration:underline; }
+
+    .foot { margin-top:14px; font-size:.85rem; color:var(--muted); }
+    .muted { color:var(--muted); }
+
+    @media (max-width:520px){ .label { width:120px; } }
+  </style>
+
+  <!-- Schema.org Organization to help automated checks -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Neurolistics LLC",
+    "url":"https://neurolistics.com/",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"1602 Amesbury Ln",
+      "addressLocality":"Rockwall",
+      "addressRegion":"TX",
+      "postalCode":"75087",
+      "addressCountry":"US"
+    },
+    "telephone":"+1-214-649-4171",
+    "email":"neurolistics@gmail.com",
+    "sameAs":[
+      "https://neurolistics.github.io/"
+    ]
+  }
+  </script>
 </head>
 <body>
-    <div>
-        <h1>Neurolistics</h1>
-        <p>Our website is coming soon. Stay tuned!</p>
+  <main class="card" role="main" aria-label="Neurolistics company information">
+    <h1>Neurolistics LLC</h1>
+    <div class="tag">Official business contact information</div>
+
+    <div class="grid" role="region" aria-label="Business details">
+      <div class="row"><div class="label">Legal name</div><div>Neurolistics LLC</div></div>
+      <div class="row"><div class="label">Address</div><div>1602 Amesbury Ln, Rockwall, TX 75087, USA</div></div>
+      <div class="row"><div class="label">Phone</div><div><a href="tel:+12146494171">(214) 649-4171</a></div></div>
+      <div class="row"><div class="label">Email</div><div><a href="mailto:neurolistics@gmail.com">neurolistics@gmail.com</a></div></div>
+      <div class="row"><div class="label">Website</div><div><a href="https://neurolistics.com/">https://neurolistics.com/</a></div></div>
     </div>
+
+    <p class="foot">
+      © <span id="y"></span> Neurolistics LLC. All rights reserved. |
+      <span class="muted">This page is provided for platform verification and official contact.</span>
+    </p>
+  </main>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
