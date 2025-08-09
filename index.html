@@ -1,61 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Neurolistics — Coming Soon</title>
-  <meta name="description" content="Neurolistics — AI-powered mental wellness. Launching soon." />
-  <style>
-    :root{
-      --bg:#0b1220; --card:#0f1830; --text:#e6eef9; --muted:#96a3bf; --accent:#6aa9ff;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Helvetica,Arial,sans-serif;
-      color:var(--text); background:radial-gradient(1200px 800px at 50% -10%, #182446 0%, #0b1220 55%, #070b15 100%);
-      display:grid; place-items:center; padding:24px;
-    }
-    .card{
-      width:min(880px, 92vw);
-      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-      border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:36px 28px 30px;
-      box-shadow:0 20px 60px rgba(0,0,0,.35), inset 0 1px 0 rgba(255,255,255,.05);
-      backdrop-filter: blur(6px);
-    }
-    h1{margin:0 0 8px; font-weight:700; letter-spacing:.2px; font-size:clamp(28px,4.5vw,40px)}
-    p{margin:.2rem 0; color:var(--muted)}
-    .pill{
-      display:inline-block; margin:.4rem 0 1rem; padding:.3rem .7rem; border-radius:999px;
-      background:rgba(106,169,255,.14); color:#dbe8ff; font-size:.85rem; letter-spacing:.3px
-    }
-    .row{display:flex; gap:18px; flex-wrap:wrap; margin-top:18px}
-    .tile{
-      flex:1 1 240px; background:var(--card); border:1px solid rgba(255,255,255,.06);
-      border-radius:14px; padding:16px 18px
-    }
-    .k{font-weight:600; color:#d6e3ff}
-    footer{margin-top:18px; font-size:.9rem; color:var(--muted)}
-    a{color:var(--accent); text-decoration:none}
-    .cta{
-      margin-top:18px; display:inline-block; padding:10px 14px; border:1px solid rgba(255,255,255,.12);
-      border-radius:10px; color:var(--text)
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurolistics - Coming Soon</title>
+    <style>
+        body {
+            background-color: #0e0e2c;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+            color: #cccccc;
+        }
+    </style>
 </head>
 <body>
-  <main class="card">
-    <span class="pill">Neurolistics</span>
-    <h1>We’re building your AI-powered mental wellness companion.</h1>
-    <p>Personalized guidance, habit design, and science-backed tools—all in one friendly assistant.</p>
-    <div class="row">
-      <div class="tile"><div class="k">Launching soon</div><div>iOS • Android • Web</div></div>
-      <div class="tile"><div class="k">Contact</div><div>hello@neurolistics.com</div></div>
-      <div class="tile"><div class="k">Follow</div><div>@neurolistics</div></div>
+    <div>
+        <h1>Neurolistics</h1>
+        <p>Our website is coming soon. Stay tuned!</p>
     </div>
-    <a class="cta" href="mailto:hello@neurolistics.com">Get launch updates →</a>
-    <footer>© <span id="y"></span> Neurolistics LLC. All rights reserved.</footer>
-  </main>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
